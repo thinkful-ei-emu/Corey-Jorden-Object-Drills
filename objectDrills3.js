@@ -9,8 +9,8 @@ const loaf = {
   }
 };
 
-console.log(loaf);
-console.log(loaf.hydration());
+//console.log(loaf);
+//console.log(loaf.hydration());
 
 ///////////////////////
 
@@ -24,11 +24,11 @@ const props = {
 
 function objTest (obj) {
   for(let key in obj){
-    console.log(obj[key]);
+    //console.log(obj[key]);
   }
 }
 
-console.log(objTest(props));
+//console.log(objTest(props));
 
 /////////////////////////
 
@@ -38,7 +38,7 @@ const object = {
   ]
 };
 
-console.log(object.meals[3]);
+//console.log(object.meals[3]);
 
 /////////////////////////
 
@@ -61,12 +61,12 @@ let people = [
 
 function occupation(obj){
   for(let key in obj){
-    console.log(obj[key]);
+    //console.log(obj[key]);
    
     if(obj[key].Boss === undefined){
-      console.log(`${obj[key].Job} ${obj[key].Name} doesn't report to anybody.`);
+      //console.log(`${obj[key].Job} ${obj[key].Name} doesn't report to anybody.`);
     } else {
-      console.log(`${obj[key].Job} ${obj[key].Name} reports to ${obj[key].Boss}.`);
+      //console.log(`${obj[key].Job} ${obj[key].Name} reports to ${obj[key].Boss}.`);
     } 
   }
 }
@@ -75,11 +75,7 @@ occupation(people);
 
 /////////////////////////
 
-let sentence = 'craft block argon meter bells brown croon droop';
-
-let code = '';
-
-let word = sentence.split(' ');
+let word = 'apple';
 
 const deCoder = {
   'a': 2,
@@ -89,17 +85,14 @@ const deCoder = {
 };
 
 function decode(word){
-
-  for(let i = 0; i < word.length; i++){
-    if(word[i][0] === deCoder['a']) {code = Object.values('a');}
-    
-    if(word[i][0] === deCoder['b']) {}
-
-    if(word[i][0] === deCoder['c']) {}
-
-    if(word[i][0] === deCoder['d']) {
-
-   } else {code = code + ' ';
+  if(word[0] === 'a'){
+    return word = deCoder['a'];
+  }
+  else {
+    return '';
   }
 }
-}
+console.log(decode(word));
+
+/////////////////////////
+
