@@ -31,3 +31,37 @@ function objTest (obj) {
 console.log(objTest(props));
 
 /////////////////////////
+
+const object = {
+  meals: [
+    'breakfast', 'second breakfast', 'elevenses', 'lunch', 'afternoon tea', 'dinner', 'supper'
+  ]
+};
+
+console.log(object.meals[3]);
+
+/////////////////////////
+
+let people = [
+  {Name: 'Bob',
+  job: 'Plumber'},
+  {Name: 'Fred',
+  job: 'Architect'},
+  {Name: 'Jenny',
+  job: 'Scientist'},
+  {Name: 'Ted',
+  job: 'Host'},
+  {Name: 'Spongebob',
+  job: 'Chef'}
+];
+
+function occupation(obj){
+  for(let key in obj){
+    console.log(obj[key]);
+  }
+}
+
+occupation(people);
+
+/////////////////////////
+
