@@ -23,3 +23,27 @@ console.log(output);
 
 /////////////////////////
 
+function enrollInSummerSchool(students) {
+  let update = [];
+  for (let i = 0; i < students.length; i++){
+    update.push({
+      name: students[i].name,
+      status: 'In Summer school',
+      course: students[i].course,
+    })
+  }
+  return update;
+}
+
+/////////////////////////
+
+function findById(items, idNum) {
+  for(let i = 0; i < items.length; i++){
+    if (items[i].id === idNum){
+      return items[i];
+    }
+  }
+}
+
+/////////////////////////
+
